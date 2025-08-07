@@ -1,17 +1,47 @@
+/* SECCION 1------------------------------------------------------------------*/
+.video_reflexivo {
+  margin: 15px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+}
+
+.video_reflexivo video {
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .video_reflexivo {
+    padding: 10px;
+  }
+
+  .video_reflexivo video {
+    width: 100%;
+    min-width: 280px;
+    border-radius: 10px;
+  }
+}
 
 
-/* SECCION 2*/
-/* SECCIÓN ¿QUIÉNES SOMOS? */
-.quienes-somos {
+/* SECCION 2------------------------------------------------------------------*/
+.quienes_somos {
   padding: 100px 20px;
   background-color: #f9f9f9;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
-.quienes-somos h2 {
+.quienes_somos h2 {
   text-align: center;
-  font-size: 42px;
+  font-size: 30px;
   margin-bottom: 40px;
   color: #1d1d1d;
   font-weight: 800;
@@ -19,7 +49,7 @@
   text-transform: uppercase;
 }
 
-.quienes-somos .content {
+.quienes_somos .content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,7 +60,7 @@
   margin: 0 auto;
 }
 
-.quienes-somos img {
+.quienes_somos img {
   width: 100%;
   max-width: 400px;
   height: auto;
@@ -39,7 +69,7 @@
   object-fit: cover;
 }
 
-.texto-botones {
+.somos_btn {
   max-width: 650px;
   font-size: 20px;
   line-height: 1.8;
@@ -47,115 +77,253 @@
   text-align: justify;
 }
 
-.texto-botones p {
+.somos_btn p {
   margin-bottom: 25px;
+  font-size: 16px;
 }
 
-.texto-botones .iconos {
+.somos_btn .botones {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
 }
 
-.texto-botones button {
+.somos_btn button {
   padding: 14px 26px;
-  background-color: #ff6b6b;
-  color: white;
+  background-color: #cfd5a7;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  
 }
 
-.texto-botones button:hover {
+.somos_btn button:hover {
   background-color: #e25050;
   transform: translateY(-2px);
 }
 
+@media (max-width: 768px) {
+  .quienes_somos {
+    padding: 60px 15px;
+  }
 
-/* SECCION 3*/
+  .quienes_somos h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
 
-.ayuda-adopta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 60px;
-  padding: 100px 40px;
-  background-color: #f9f9f9;
+  .quienes_somos .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .somos_btn {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .somos_btn button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .quienes_somos img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
 }
 
-.acciones,
-.corazones {
-  flex: 1 1 400px;
-  max-width: 600px;
+/* SECCION 3------------------------------------------------------------------*/
+
+.ayuda_adopta {
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.info_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.info_box {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.info_box img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.info_box h3 {
+  font-size: 24px;
+  color: #e25050;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.info_box:nth-child(2) h3 {
+  color: #009688;
+}
+
+.info_box p {
+  font-size: 16px;/* --- ------------------------------------------- --- */
+  color: #333;
+  line-height: 1.7;
+}
+
+/* --- IMPACTO: TÍTULO Y CORAZONES --- */
+.impacto {
   text-align: center;
 }
 
-/* AYUDA - ADOPTA */
-.acciones h2 {
-  font-size: 48px;
-  margin-bottom: 30px;
-  color: #2c2c2c;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.acciones img {
-  width: 100%;
-  max-width: 480px;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-
-.acciones .btn {
-  display: inline-block;
-  margin: 10px 15px;
-  padding: 16px 30px;
-  font-size: 22px;
-  background-color: #2c2c2c;
-  color: white;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.acciones .btn:hover {
-  background-color: #444;
-}
-
-/* CORAZONES - IMPACTO */
-.corazones h2 {
-  font-size: 48px;
+.impacto h3 {
+  font-size: 30px;
+  color: #1d1d1d;
   margin-bottom: 40px;
-  color: #c62828;
-  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .corazones {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.corazones > div {
-  width: 160px;
-  height: 160px;
-  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
-  background-size: contain;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: white;
-  margin: 15px;
-  text-shadow: 1px 1px 2px black;
+/* MEJORAR EL DISEÑOOOO DE AQUIIII CORAZONES DE FONDOOOOOO */
+.corazones div {
+  background: #ffffff;
+  border: 2px solid #f0f0f0;
+  padding: 30px 20px;
+  width: 180px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.corazones div:hover {
+  transform: translateY(-5px);
+}
+
+.corazones div::before {
+  content: "❤️";
+  font-size: 36px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.corazones div strong {
+  font-size: 32px;
+  color: #2c2c2c;
+  display: block;
+}
+
+.corazones div span,
+.corazones div::after {
+  font-size: 16px;
+  color: #666;
+}
+
+/* --- AYUDA-ADOPTA: TÍTULO, FOTO Y BOTONES --- */
+.ayuda_adopta .acciones {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ayuda_adopta .acciones h2 {
+  font-size: 38px;
+  color: #1d1d1d;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ayuda_adopta .acciones img {
+  width: 280px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+}
+
+.ayuda_adopta .acciones .btn {
+  padding: 14px 26px;
+  background-color: #cfd5a7;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.ayuda_adopta .acciones .btn:hover {
+  background-color: #e25050;
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .info_container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .info_box h3 {
+    font-size: 20px;
+  }
+
+  .impacto h3 {
+    font-size: 28px;
+  }
+
+  .corazones {
+    gap: 20px;
+  }
+
+  .corazones div {
+    width: 140px;
+    padding: 20px 15px;
+  }
+
+  .corazones div strong {
+    font-size: 24px;
+  }
+
+  .corazones div::before {
+    font-size: 30px;
+  }
+
+  .corazones div span {
+    font-size: 14px;
+  }
+
+  .ayuda_adopta .acciones h2 {
+    font-size: 30px;
+  }
+
+  .ayuda_adopta .acciones .btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+  }
 }
