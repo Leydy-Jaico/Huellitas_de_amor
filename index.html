@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MONDARCO</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="assets/img/icono.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<!--BODY(CUERPO)-->
+<body>
+  <!--HEADER (ENCABEZADO)-->
+  <div id="header"></div>
+
+  <!-- VIDEO REFLEXIVO (SECCION 1) -->
+  <section class="video_reflexivo">
+    <video id="videoReflexivo"
+      autoplay muted controls playsinline 
+      poster="assets/img/portada.jpg">
+      <source src="assets/videos/Video_reflexivo.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- ¿QUIÉNES SOMOS? (SECCION 2)-->
+  <section class="quienes-somos">
+    <h2>¿Quiénes Somos?</h2>
+    <div class="content">
+      <img src="assets/img/somos.png" alt="Foto Refugio">
+      
+      <div class="texto-botones">
+        <p>
+          Somos una comunidad de Ayacucho comprometida con el rescate, protección y adopción responsable de perritos en situación de abandono.
+          Trabajamos con amor, dedicación y respeto por la vida animal, ofreciendo una segunda oportunidad a quienes más lo necesitan.
+          Impulsamos campañas de esterilización, vacunación, reubicación y adopción, con el apoyo de voluntarios y personas solidarias 
+          que comparten nuestro propósito. Creemos que adoptar es un acto de amor y que cada peludito merece un hogar lleno de cuidado y cariño. 
+        </p>
+
+        <div class="iconos">
+          <button>Donar 💖</button>
+          <button>Ser voluntario 💪</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- AYUDA - ADOPTA Y EL IMPACTO (SECCION 3) -->
+  <section class="ayuda-adopta">
+    <!-- AYUDA-ADOPTA -->
+    <div class="acciones">
+      <h2>Ayuda - Adopta</h2>
+      <img src="assets/img/ayuda.jpg" alt="Foto Perritos">
+      <a href="pages/voluntario.html" class="btn">Quiero Ayudar</a>
+      <a href="pages/adopta.html" class="btn">Quiero Adoptar</a>
+    </div>
+
+
+    <!-- NUESTRO IMPACTO -->
+    <div class="corazones">
+      <h2>Nuestro Impacto</h2>
+        <div><strong>120</strong>Albergados</div>
+        <div><strong>300</strong>Adoptados</div>
+        <div><strong>200</strong>Rescatados</div>
+    </div>
+  </section>
+
+  <!-- FOOTER Y A LA VEZ EL FORMULARIO DEL CONTACTO (SECCION 4) -->
+  <div id="footer"></div>
+
+
+  <!--ENLACE DE JAVASCRIPT(MANEJO DOM) Y OTROS JS -->
+  <script src="/js/header.js" defer></script>
+  <script src="/js/contacto.js"></script>
+  <script src="/js/footer.js"></script>
+
+</body>
+</html>
+

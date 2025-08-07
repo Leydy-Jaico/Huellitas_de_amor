@@ -1,0 +1,154 @@
+
+
+/* VIDEO REFLEXIVO */
+.video-reflexivo {
+  max-width: 1200px;
+  margin: 60px auto; /* centrado + más espacio arriba/abajo */
+  padding: 30px;
+  background-color: #ffffffda; /* fondo blanco con transparencia */
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(3px); /* efecto visual moderno */
+  border: 2px solid #e0e0e0;
+}
+
+.video-reflexivo video {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.video-reflexivo video:hover {
+  transform: scale(1.01); /* ligero zoom al pasar el mouse */
+}
+
+/* QUIÉNES SOMOS */
+.quienes-somos {
+  padding: 100px 40px;
+  background-color: #f3f3f3;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+
+.quienes-somos h2 {
+  text-align: center;
+  font-size: 58px;
+  margin-bottom: 60px;
+  color: #2c2c2c;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.quienes-somos .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.quienes-somos img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: cover;
+  align-self: flex-start;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.texto-botones {
+  max-width: 750px;
+  font-size: 28px;
+  line-height: 2;
+  color: #333;
+  text-align: justify;
+}
+
+.texto-botones p {
+  margin-bottom: 30px;
+}
+
+.texto-botones .iconos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-botones button {
+  padding: 16px 30px;
+  background-color: #2d2d2d;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.texto-botones button:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+
+/* AYUDA - ADOPTA */
+.ayuda-adopta {
+  padding: 100px 40px;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.ayuda-adopta h2 {
+  font-size: 50px;
+  color: #2c2c2c;
+  margin-bottom: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ayuda-adopta img {
+  max-width: 100%;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ayuda-adopta .acciones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.ayuda-adopta .acciones .btn {
+  padding: 16px 30px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.ayuda-adopta .acciones .btn:hover {
+  background-color: #222;
+  transform: scale(1.05);
+}
+
+
+/* IMPACTO */
+
+
+/* FOOTER */
+
+
