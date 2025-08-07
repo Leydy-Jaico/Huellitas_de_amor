@@ -1,127 +1,97 @@
 /* ESTILOS GENERALES EN TODAS LAS PÁGINAS: HEADER, FOOTER, ENTRE OTROS */
-
-/* GENERAL RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-body {
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
-}
 
 /* HEADER */
 header {
-  background-image: url(/assets/img/fondo_patitas.png);
-  background-repeat: repeat;
-  background-size: 200px;
-  background-color: #f1e7ae;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: url(/assets/img/fondo_patitas.png);
+  background-color: #f1e7ae;
+  width: 100%;
 }
 
 /* LOGO */
-.logo img {
-  height: 80px;
-  width: auto;
-  object-fit: contain;
-  background: transparent;
+.logo_mondarco{
+  max-width: 10rem;
 }
 
 /* NAV PRINCIPAL */
-nav ul {
-  list-style: none;
+.nav-lista{
+  list-style-type: none;
   display: flex;
-  gap: 20px;
-  align-items: center;
+  gap: 2rem;
 }
 
-nav ul li a {
+.nav-lista li a{
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
   color: #222;
-  padding: 8px 14px;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-}
-
-/* BOTÓN AYUDA AQUÍ */
-nav ul li a.ayuda_btn {
-  background-color: white;
-  color: black !important;
-  border-radius: 25px;
-  padding: 8px 18px;
   font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.2s;
 }
 
-nav ul li a.ayuda_btn:hover {
-  background-color: #eeeeee;
-  transform: scale(1.05);
-}
-
-/* BOTÓN HAMBURGUESA */
-.menu_hamburguesa {
-  background: none;
-  border: none;
-  font-size: 28px;
+/* MENU HAMBURGUESA*/
+.abrir-menu,
+.cerrar-menu{
   display: none;
-  color: #000;
-  cursor: pointer;
 }
 
-/* RESPONSIVE MENU */
-@media (max-width: 768px) {
-  .menu_hamburguesa {
+@media screen and (max-width: 700px){
+  .abrir-menu,
+  .cerrar-menu {
     display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+    cursor: pointer;
   }
 
-  nav {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #f1e7ae;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  .abrir-menu {
+    color: #1c1c1c;
   }
 
-  nav.activo {
-    max-height: 500px;
+  .cerrar-menu {
+    color: #000000;
   }
 
-  nav ul {
+  
+  .nav{
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px 0;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2e6a4;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
   }
 
-  nav ul li a {
-    font-size: 20px;
+  .nav.visible {
+    opacity: 1;
+    visibility:visible ;
   }
 
-  nav ul li a.ayuda_btn {
-    padding: 10px 22px;
+  .nav-lista{
+    flex-direction: column;
+    align-items: end;
   }
+
 }
+
+
+
 
 
 
