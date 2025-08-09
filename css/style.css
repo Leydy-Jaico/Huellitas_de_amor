@@ -13,7 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
-  background-image: url(/assets/img/fondo_patitas.png);
+  background-image: url(../assets/img/fondo_patitas.png);
   background-color: #f1e7ae;
   width: 100%;
 }
