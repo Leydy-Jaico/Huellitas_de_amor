@@ -12,7 +12,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1.5rem;
   background-image: url(/assets/img/fondo_patitas.png);
   background-color: #f1e7ae;
   width: 100%;
@@ -42,7 +42,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -89,10 +89,5 @@ header {
   }
 
 }
-
-
-
-
-
 
 /* FOOTER*/
