@@ -43,6 +43,13 @@ header {
 }
 
 @media screen and (max-width: 800px){
+  .logo_mondarco{
+    max-width: 8rem;
+  }
+
+}
+
+@media screen and (max-width: 800px){
   .abrir-menu,
   .cerrar-menu {
     display: block;
@@ -76,6 +83,7 @@ header {
     background-color: #f2e6a4;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    z-index: 1000;
   }
 
   .nav.visible {
@@ -90,4 +98,23 @@ header {
 
 }
 
+
+
 /* FOOTER*/
+.footer-yellow {
+  color: #FFD966 !important;
+}
+
+.footer-yellow:hover {
+  color: #FFE599 !important;
+}
+ 
+.footer-social a {
+  color: #FFD966;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #FFE599;
+}
+

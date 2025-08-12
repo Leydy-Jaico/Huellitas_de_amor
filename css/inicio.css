@@ -6,7 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9f9f9;
+
+  position: relative; /* para poder controlar z-index */
+  z-index: 1;
+
 }
 
 .video_reflexivo video {
@@ -113,7 +116,7 @@
   }
 
   .quienes_somos h2 {
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 30px;
   }
 
@@ -143,7 +146,6 @@
 
 .ayuda_adopta {
   padding: 100px 20px;
-  background-color: #f9f9f9;
   border-top: 1px solid #ddd;
 }
 
@@ -240,52 +242,12 @@
   color: #666;
 }
 
-/* --- AYUDA-ADOPTA: TÍTULO, FOTO Y BOTONES --- */
-.ayuda_adopta .acciones {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.ayuda_adopta .acciones h2 {
-  font-size: 38px;
-  color: #1d1d1d;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.ayuda_adopta .acciones img {
-  width: 280px;
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  margin: 20px 0;
-}
-
-.ayuda_adopta .acciones .btn {
-  padding: 14px 26px;
-  background-color: #cfd5a7;
-  color: #000;
-  border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  margin: 10px;
-  display: inline-block;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.ayuda_adopta .acciones .btn:hover {
-  background-color: #e25050;
-  transform: translateY(-2px);
-}
-
 /* --- RESPONSIVE --- */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .info_container {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
   }
 
   .info_box h3 {
@@ -293,16 +255,23 @@
   }
 
   .impacto h3 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .corazones {
+    display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    justify-content: center;
   }
 
   .corazones div {
-    width: 140px;
+
+    flex: 1 1 140px;
+    min-width: 100px;
     padding: 20px 15px;
+    box-sizing: border-box;
   }
 
   .corazones div strong {
@@ -317,13 +286,4 @@
     font-size: 14px;
   }
 
-  .ayuda_adopta .acciones h2 {
-    font-size: 30px;
-  }
-
-  .ayuda_adopta .acciones .btn {
-    width: 100%;
-    max-width: 300px;
-    font-size: 16px;
-  }
 }

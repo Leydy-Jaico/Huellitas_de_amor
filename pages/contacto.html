@@ -8,8 +8,6 @@
   <link rel="icon" type="image/jpeg" href="../assets/img/icono.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  
- 
 </head>
 
 <!--BODY(CUERPO)-->
@@ -33,9 +31,31 @@
     </nav>
   </header>
 
+  <main>
+    <section id="contacto" class="container my-5">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form id="formContacto">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" class="form-control" required>
+        </div>
 
-  
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
 
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-warning w-100">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
 
+  <!--JS -->
   <script src="../js/main.js"></script>
+  <script src="../js/contacto.js"></script>
+
 </body>
